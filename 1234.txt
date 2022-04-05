@@ -1,0 +1,17 @@
+git 배워오기
+
+git 초기 셋팅 법 ( 설치 법 및 사용자 정보 등록 ) 이랑
+clone, remote, add, commit, push
+
+git config --global user.name 이름
+git config --global user.email 이메일
+
+
+cd 파일 -> git clone 주소 -> cd 저장소 이름 -> git add 넣을 파일 
+->git commit -m "내용" -> git push
+
+이 정도만 해도 Okay,
+
+pip 사용 법 배워오기
+
+pip install 만 이라도 배워오셈 제발
