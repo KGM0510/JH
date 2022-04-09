@@ -7,13 +7,26 @@
 
 # 예) 생성된 비밀번호 : nav51!
 
-url = "http://naver.com" # 규칙 1
+url = "http://naver.com" 
+my_str = url.replace("http://","") # 규칙 1
+my_str = my_str[:my_str.index(".")] # 규칙 2
+password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!" # password = nav51! # 규칙 3
+print ("{0} 의 비밀번호는 {1} 입니다.".format(url, password)) # http://naver.com 의 비밀번호는 nav51! 입니다.
 
-my_str = url.replace("http://","") # 규칙 2
+url = "https://www.google.com"
+my_str = url.replace("https://www.","")
+my_str = my_str[:my_str.index(".")]
+password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
+print ("{0} 의 비밀번호는 {1} 입니다.".format(url, password))
 
-my_str = my_str[:my_str.index(".")] # 규칙 3
+url = "https://www.youtube.com"
+my_str = url.replace("https://www.", "")
+my_str = my_str[:my_str.index(".")]
+password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
+print ("{0} 의 비밀번호는 {1} 입니다.".format(url, password))
 
-
-password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!" # password = nav51!
-
-print ("{0} 의 비밀번호는 {1} 입니다.".format(url, password)) # http://naver.com 의 비밀번호는 nav51! 입니다. 
+url = "http://daum.net"
+my_str = url.replace("http://", "")
+my_str = my_str[:my_str.index(".")]
+password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
+print ("{0} 의 비밀번호는 {1} 입니다.".format(url, password))
